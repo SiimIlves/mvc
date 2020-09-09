@@ -1,3 +1,3 @@
 # mvc
 :house:
-<h1> :house </h1>
+<h1> :house: </h1>
