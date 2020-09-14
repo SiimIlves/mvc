@@ -15,8 +15,12 @@ pood.kuva_elemendid()
 # konkreetse elemendi kuvamine
 pood.kuva_element("piim")
 # elemendi lisamine
+pood.lisa_element("tort", 0.60, 15)
+print("lisa veel üks kohuke")
 pood.lisa_element("kohuke", 0.60, 15)
 pood.kuva_element("kohuke")
+# loeme elemendi mis ei eksisteeri
+pood.kuva_element("küpsis")
 # elemendi uuendamine
 pood.uuenda_element("viin", 10.0, 10)
 # elemendi kustutamine

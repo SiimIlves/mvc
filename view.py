@@ -5,13 +5,24 @@ class View:
             print("- {}".format(element))
 
     def kuva_element(self, nimetus, element):
-        print(" Kuvame {} elementi andmed".format(nimetus))
+        print(" Kuvame {} elemendi andmed".format(nimetus))
         print(element)
 
     def lisa_element(self, nimetus, hind, kogus):
         print("Elemendi lisamine")
         print("Lisatud {} hinnaga {}EUR koguses {}".format(nimetus, hind, kogus))
 
+    def veateade_element_juba_olemas(self, nimetus, veateade):
+        print("===============================================")
+        print("Elemendi {} lisamise probleem".format(nimetus))
+        print(veateade)
+        print("===============================================")
+
+    def veateade_elementi_ei_ole(self, nimetus, veateade):
+        print("===============================================")
+        print("Elemendi {} lugemise probleem".format(nimetus))
+        print(veateade)
+        print("===============================================")
 
 
     def uuenda_element(self, nimetus, vana_hind, vana_kogus, uus_hind, uus_kogus):
