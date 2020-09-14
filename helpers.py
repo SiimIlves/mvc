@@ -8,7 +8,7 @@ def lisa_element(nimetus, hind, kogus):
         if nimetus in element.values():
             nimetused.append(nimetus)
     if nimetus in nimetused:
-        print("Element {} on juba olemas".format(nimetus))
+        raise exceptions.ElementJubaOlemas("Element {} on juba olemas".format(nimetus))
     else:
         elemendid.append({"nimetus":nimetus, "hind":hind, "kogus":kogus})
 
